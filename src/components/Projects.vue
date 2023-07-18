@@ -1,20 +1,33 @@
 <template>
-    <section>
-        <div class="title">
-            <hr>
-            <h2>PROJETOS</h2>
-            <hr>
-        </div>
+    <section class="projects">
+        <SectionTitle title="PROJETOS"/>
+        <Project name="Flappy Bird" arquive="flappy.png"
+          summary="Uma cópia simples do jogo Flappy Bird utilizando apenas <b>Html</b>, <b>CSS</b> e <b>JavaScript</b>."  
+          :technologies="['html5', 'css3', 'js']" :haveWebSite="true"/>
+        <Project name="Calculadora" arquive="calc.png"
+          summary="Calculadora que realiza operações básicas feita utilizando <b>Vue.js</b>."  
+          :technologies="['js', 'vuejs']" :haveWebSite="true"/>
     </section>
 </template>
 
 <script>
+import SectionTitle from './SectionTitle';
+import Project from './Project';
+
 export default {
   name: "MyProjects",
+  components: { SectionTitle, Project }
 };
 </script>
 
 <style>
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
     margin-top: 55px;
     width: 900px;

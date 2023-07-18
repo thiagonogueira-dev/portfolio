@@ -5,9 +5,9 @@
                 <div class="name-links">
                     <h1>Thiago Nogueira</h1>
                     <div class="icons">
-                        <font-awesome-icon :icon="['fab', 'linkedin']" />
-                        <font-awesome-icon :icon="['fab', 'github']" />
-                        <font-awesome-icon :icon="['fas', 'file-lines']" />
+                        <font-awesome-icon :icon="['fab', 'linkedin']" :style="{ color: 'blue'}" size="lg"/>
+                        <font-awesome-icon :icon="['fab', 'github']" :style="{ color: 'red'}" size="lg"/>
+                        <font-awesome-icon :icon="['fas', 'file-lines']" :style="{ color: 'gray'}" size="lg"/>
                     </div>
                 </div>
                 <h2>Estudante de Sistemas de Informação</h2>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="figure">
-            <img src="../assets/figure.png" alt="Figura">
+            <img src="../../static/assets/figure.png" alt="Figura">
         </div>
     </section>
 </template>

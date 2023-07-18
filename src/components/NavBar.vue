@@ -40,6 +40,12 @@ export default {};
 </script>
 
 <style>
+nav {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
 .logo {
   font-size: 1.5rem !important;
   margin: 0;

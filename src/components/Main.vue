@@ -21,6 +21,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px;
+    margin-top: 80px;
 }
 </style>

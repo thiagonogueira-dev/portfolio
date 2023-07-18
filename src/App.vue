@@ -17,11 +17,17 @@ export default {
 
 <style>
 :root {
-    --detail-blue: #33CCCC;
+    --detail-blue: #1ED6EF;
     --background-color: #D9D9D9;
+    --project-background: #F5F5F5;
 }
 
 body {
     background-color: var(--background-color) !important;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
 }
 </style>
