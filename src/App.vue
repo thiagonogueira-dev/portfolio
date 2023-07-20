@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <NavBar />
+        <div id="home"></div>
         <Main />
     </div>
 </template>
@@ -29,5 +30,9 @@ body {
 body a {
     text-decoration: none;
     color: black;
+}
+
+body img {
+    -webkit-user-drag: none;
 }
 </style>

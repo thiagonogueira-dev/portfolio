@@ -21,13 +21,13 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Projetos</a>
+            <a class="nav-link text-light" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Tecnologias</a>
+            <a class="nav-link text-light" href="#tecnologias">Tecnologias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contato</a>
+            <a class="nav-link text-light" href="#contato">Contato</a>
           </li>
         </ul>
       </div>

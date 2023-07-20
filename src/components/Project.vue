@@ -1,10 +1,11 @@
 <template>
-    <div class="project">
+    <div class="project container-main">
         <h3>{{ name }}</h3>
         <img :src="imageSrc" alt="">
-        <p v-html="summary"></p>
-        <div class="technologies">
-            <font-awesome-icon v-for="tech in technologies" :key="tech" :icon="['fab', tech]" size="2x"/>
+        <p v-html="summary" class="summary"></p>
+        <div class="technologies-proj">
+            <font-awesome-icon class="icon" v-for="tech in technologies" :key="tech" :icon="['fab', tech]" 
+                :title="capitalize(tech)" :class="tech"/>
         </div>
         <hr>
         <div class="info-proj">
@@ -19,7 +20,7 @@ export default {
     name: 'MyProject',
     props: { 
         name: {},
-        arquive: { type: String },
+        img: { type: String },
         summary: {},
         technologies: { type: Array },
         haveWebSite: { type: Boolean}
@@ -29,21 +30,26 @@ export default {
             imageSrc: null
         }
     },
+    methods: {
+        capitalize(str) {
+            if(str === 'js') {
+                return 'JavaScript';
+            }
+            if(str.includes('js')) {
+                str = str.replace('js', '');
+            }
+            return str.charAt(0).toUpperCase() + str.substr(1);
+        }
+    },
     mounted(){
-        this.imageSrc = require(`/static/assets/${this.arquive}`);
+        this.imageSrc = require(`/static/assets/${this.img}`);
     }
 }
 </script>
 
 <style>
 .project {
-    width: 850px;
-    background-color: var(--project-background);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -58,11 +64,24 @@ export default {
     height: 315px;
 }
 
-.technologies {
+.summary {
+    width: 70%;
+}
+
+.technologies-proj {
     display: flex;
     width: 450px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    transform: scale(1.08);
 }
 
 .project hr {
@@ -88,5 +107,9 @@ export default {
 
 .info-proj a:hover{
     transform: scale(1.05);
+}
+
+.html5:hover {
+    color: orange;
 }
 </style>

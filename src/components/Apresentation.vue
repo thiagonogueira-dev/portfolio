@@ -5,11 +5,18 @@
                 <div class="name-links">
                     <h1>Thiago Nogueira</h1>
                     <div class="icons">
-                        <font-awesome-icon :icon="['fab', 'linkedin']" :style="{ color: 'blue'}" size="lg"/>
-                        <font-awesome-icon :icon="['fab', 'github']" :style="{ color: 'red'}" size="lg"/>
-                        <font-awesome-icon :icon="['fas', 'file-lines']" :style="{ color: 'gray'}" size="lg"/>
+                        <a href="https://github.com/thiagonogueira-dev" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" title="GitHub" class="github"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/thiago-nogueira-247903218/" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'linkedin']" title="Linkedin" class="linkedin"/>
+                        </a>
+                        <a href="" target="_blank">
+                            <font-awesome-icon :icon="['fas', 'file-lines']" title="Currículo" class="curriculo"/>
+                        </a>
                     </div>
                 </div>
+
                 <h2>Estudante de Sistemas de Informação</h2>
             </div>
             <div class="summary">
@@ -71,5 +78,24 @@ export default {
 
     .summary {
         width: 90%;
+    }
+
+    .linkedin, .github, .curriculo {
+        color: gray;
+        width: 30px;
+        height: 30px;
+        /* cursor: pointer; */
+    }
+
+    .linkedin:hover, .github:hover, .curriculo:hover {
+        transform: scale(1.1);
+    }
+
+    .linkedin:hover {
+        color: #0A66C2;
+    }
+
+    .github:hover {
+        color: #000000;
     }
 </style>

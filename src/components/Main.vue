@@ -2,25 +2,37 @@
     <main class="main">
         <Apresentation />
         <Projects />
+        <Technologies :technologiesFaB="['js', 'node' ,'java','php', 'git',
+            'github', 'aws', 'linux']" :technologiesFaS="['database']"/>
     </main>
 </template>
 
 <script>
 import Apresentation from './Apresentation';
 import Projects from './Projects';
+import Technologies from './Technologies';
 
 export default {
     name: 'MyMain',
-    components: { Apresentation, Projects }
+    components: { Apresentation, Projects, Technologies }
 }
 </script>
 
 <style>
-.main {
+.main, .technologies, .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+.main {
+    justify-content: center;
     margin-top: 80px;
+}
+
+.container-main {
+    width: 850px;
+    background-color: var(--project-background);
+    border-radius: 5px;
+    margin: 20px 0px;
 }
 </style>
