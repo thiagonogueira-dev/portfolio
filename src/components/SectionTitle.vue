@@ -27,11 +27,17 @@ export default {
 }
 
 .title h2 {
-    font-size: 2.0rem !important;
+    font-size: 2.0rem;
 }
 
 .title hr {
   width: 50%;
   border: 1px solid var(--detail-blue);
+}
+
+@media (max-width: 992px) {
+    .title {
+        width: 750px;
+    }
 }
 </style>

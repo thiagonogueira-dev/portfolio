@@ -35,4 +35,10 @@ export default {
     border-radius: 5px;
     margin: 20px 0px;
 }
+
+@media (max-width: 992px){
+    .container-main {
+        width: 700px;
+    }
+}
 </style>

@@ -7,7 +7,7 @@
         <Project name="Calculadora" img="calc.png"
           summary="Calculadora que realiza operações básicas feita utilizando <b>Vue.js</b>."  
           :technologies="['js', 'vuejs']" :haveWebSite="true"/>
-        <Project name="Games List" img=""
+        <Project name="Games List" img="flappy.png"
           summary="Um sistema de cadastro de jogos feito utilizando <b>Spring Boot</b>, um framework do <b>Java</b>,
             onde é possível organizar os jogos por categoria e ordená-los de acordo com a vontade do usuário. O frontend foi
             feito utilizando a biblioteca <b>jQuery UI</b>."  
@@ -33,22 +33,4 @@ export default {
   align-items: center;
 }
 
-.title {
-    margin-top: 55px;
-    width: 900px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0px 5px;
-}
-
-.title h2 {
-    font-size: 1.9rem;
-}
-
-.title hr {
-  width: 50%;
-  border-width: 1.5px;
-  border-color: var(--detail-blue);
-}
 </style>

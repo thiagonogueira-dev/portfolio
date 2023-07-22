@@ -82,13 +82,12 @@ export default {
 
     .linkedin, .github, .curriculo {
         color: gray;
-        width: 30px;
-        height: 30px;
-        /* cursor: pointer; */
+        width: 35px;
+        height: 35px;
     }
 
     .linkedin:hover, .github:hover, .curriculo:hover {
-        transform: scale(1.1);
+        transform: scale(1.15);
     }
 
     .linkedin:hover {
@@ -97,5 +96,21 @@ export default {
 
     .github:hover {
         color: #000000;
+    }
+
+    .curriculo:hover {
+        color: #424242;
+    }
+    
+    @media (max-width: 992px) {
+        .apresentation {
+            width: 750px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .apresentation {
+            width: 576px;
+        }
     }
 </style>
