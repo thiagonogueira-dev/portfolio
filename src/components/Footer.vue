@@ -33,6 +33,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: white;
     padding: 25px 0px 10px 0px;
     margin-top: 10px;
@@ -64,5 +65,20 @@ p {
 .footer hr {
     width: calc(100% - 20px);
     margin-bottom: 30px;
+}
+
+.footer .icon:hover {
+    transform: none;
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contacts .item:nth-child(2) {
+        margin-top: 15px;
+    }
 }
 </style>

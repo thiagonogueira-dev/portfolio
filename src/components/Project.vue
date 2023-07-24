@@ -105,11 +105,31 @@ export default {
     align-self: center;
 }
 
-.info-proj a:hover{
+.info-proj a:hover {
     transform: scale(1.05);
 }
 
 .html5:hover {
     color: orange;
 }
+
+@media (max-width: 768px) {
+    .project img {
+        width: 360px;
+        height: 247px;
+    }
+}
+
+@media (max-width: 576px) {
+    .technologies-proj {
+        width: 80%;
+    }
+
+    .project img{
+        width: 80%;
+        height: 80%;
+    } 
+
+}
+
 </style>

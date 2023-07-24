@@ -26,6 +26,7 @@ export default {
 
 body {
     background-color: var(--background-color) !important;
+    width: 100% !important;
 }
 
 body a {

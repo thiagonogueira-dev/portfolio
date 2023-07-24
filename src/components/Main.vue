@@ -26,7 +26,7 @@ export default {
 }
 .main {
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .container-main {
@@ -39,6 +39,18 @@ export default {
 @media (max-width: 992px){
     .container-main {
         width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-main {
+        width: 515px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-main {
+        width: 90%;
     }
 }
 </style>

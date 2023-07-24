@@ -42,4 +42,22 @@ export default {
     margin: 30px 20px;
 }
 
+@media (max-width: 768px) {
+    .techs .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .techs .icon:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 576px){
+    .techs .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 </style>

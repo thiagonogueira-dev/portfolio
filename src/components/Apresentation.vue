@@ -99,7 +99,7 @@ export default {
     }
 
     .curriculo:hover {
-        color: #424242;
+        color: #868686;
     }
     
     @media (max-width: 992px) {
@@ -110,7 +110,102 @@ export default {
 
     @media (max-width: 768px) {
         .apresentation {
-            width: 576px;
+            width: 530px;
+        }
+
+        .name-links {
+            width: 100%;
+        }
+
+        .name-links h1 {
+            font-size: 1.6rem;
+        }
+
+        .info h2 {
+            font-size: 1.3rem;
+        }
+
+        .summary {
+            width: 95% !important;
+        }
+
+        .apresentation .figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .figure img {
+            width: 150px;
+            height: 140px;
+            padding-left: 10px;
+        }
+
+        .icons {
+            width: 35%;
+            justify-content: space-between;
+        }
+
+        .linkedin, .github, .curriculo {
+            width: 30px;
+            height: 30px;
+        }
+
+        .linkedin {
+            color: #0A66C2;
+        }
+
+        .github {
+            color: #000000;;
+        }
+
+        .curriculo {
+            color: #868686;
+        }
+        
+        .linkedin:hover, .github:hover, .curriculo:hover {
+            transform: none;
         }
     }
+
+    @media (max-width: 576px) {
+        .apresentation {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .apresentation .text {
+            width: 100%;
+            padding-left: 15px;
+        }
+
+        .apresentation .summary {
+            width: 100%;
+        }
+
+        .apresentation .figure {
+            display: none;
+        }
+
+        .name-links h1 {
+            font-size: 1.35rem;
+        }
+
+        .info h2 {
+            font-size: 1.15rem;
+        }
+
+        .linkedin, .github, .curriculo {
+            width: 30px;
+            height: 30px;
+        }
+
+        .icons {
+            width: 130px;
+        }
+    }
+
+    
+
 </style>

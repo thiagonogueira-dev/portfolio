@@ -16,12 +16,14 @@ export default {
 </script>
 
 <style>
+
 .title {
-    margin-top: 55px;
+    margin-top: 35px;
     margin-bottom: 10px;
     width: 900px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 0px 5px;
 }
@@ -40,4 +42,18 @@ export default {
         width: 750px;
     }
 }
+
+@media (max-width: 768px) {
+    .title {
+        width: 530px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        flex-direction: row;
+        width: 320px;
+    }
+}
+
 </style>
