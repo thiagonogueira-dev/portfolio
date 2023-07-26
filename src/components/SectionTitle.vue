@@ -18,7 +18,7 @@ export default {
 <style>
 
 .title {
-    margin-top: 35px;
+    margin-top: 58px;
     margin-bottom: 10px;
     width: 900px;
     display: flex;

@@ -11,7 +11,7 @@
                         <a href="https://www.linkedin.com/in/thiago-nogueira-247903218/" target="_blank">
                             <font-awesome-icon :icon="['fab', 'linkedin']" title="Linkedin" class="linkedin"/>
                         </a>
-                        <a href="" target="_blank">
+                        <a href="https://drive.google.com/file/d/1aZxcyT_VOhnIsX-9nH-znBL_tPDSRoeG/view?usp=sharing" target="_blank">
                             <font-awesome-icon :icon="['fas', 'file-lines']" title="Currículo" class="curriculo"/>
                         </a>
                     </div>
@@ -99,7 +99,7 @@ export default {
     }
 
     .curriculo:hover {
-        color: #868686;
+        color: #A6A7A2;
     }
     
     @media (max-width: 992px) {
@@ -161,7 +161,7 @@ export default {
         }
 
         .curriculo {
-            color: #868686;
+            color: #A6A7A2;
         }
         
         .linkedin:hover, .github:hover, .curriculo:hover {
@@ -203,6 +203,7 @@ export default {
 
         .icons {
             width: 130px;
+            margin-bottom: 3px;
         }
     }
 

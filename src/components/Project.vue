@@ -9,8 +9,8 @@
         </div>
         <hr>
         <div class="info-proj">
-            <a href="#" target="_blank" v-if="haveWebSite"><font-awesome-icon :icon="['far', 'eye']" size="2x"/></a>
-            <a href="#" target="_blank"><font-awesome-icon :icon="['fas', 'code']" size="2x" /></a>
+            <a :href="webSite" target="_blank" v-if="haveWebSite"><font-awesome-icon :icon="['far', 'eye']" size="2x"/></a>
+            <a :href="repository" target="_blank"><font-awesome-icon :icon="['fas', 'code']" size="2x" /></a>
         </div>
     </div>
 </template>
@@ -23,7 +23,9 @@ export default {
         img: { type: String },
         summary: {},
         technologies: { type: Array },
-        haveWebSite: { type: Boolean}
+        haveWebSite: { type: Boolean},
+        webSite: {},
+        repository: {}
     },
     data: function(){
         return{
