@@ -24,6 +24,7 @@ export default {
     --project-background: #F5F5F5;
 }
 
+
 body {
     background-color: var(--background-color) !important;
     width: 100% !important;

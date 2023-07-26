@@ -111,10 +111,6 @@ export default {
     transform: scale(1.05);
 }
 
-.html5:hover {
-    color: orange;
-}
-
 @media (max-width: 768px) {
     .project img {
         width: 360px;

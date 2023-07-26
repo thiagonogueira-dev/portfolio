@@ -16,9 +16,14 @@
           summary="Calculadora que realiza operações básicas feita utilizando <b>Vue.js</b>."  
           :technologies="['js', 'vuejs']" :haveWebSite="true" webSite="https://calculadora-vue-nu.vercel.app/"
           repository="https://github.com/thiagonogueira-dev/calculadora-vue"/>
-        <!-- <Project name="Flappy Bird" img="flappy.png"
-          summary="Uma cópia simples do jogo Flappy Bird utilizando apenas <b>Html</b>, <b>CSS</b> e <b>JavaScript</b>."  
-          :technologies="['html5', 'css3', 'js']" :haveWebSite="true"/> -->
+
+        <button class="btn-others" @click="showHiddenProjects()">Outros projetos...</button>
+
+        <Project class="project-hidden d-none" name="Flappy Bird" img="flappy.png"
+        summary="Uma cópia simples do jogo Flappy Bird utilizando apenas <b>Html</b>, <b>CSS</b> e <b>JavaScript</b>."  
+        :technologies="['html5', 'css3', 'js']" :haveWebSite="true" webSite="https://flappy-bird-xi-wheat.vercel.app/"
+        repository="https://github.com/thiagonogueira-dev/flappy-bird"/>
+      
     </section>
 </template>
 
@@ -28,7 +33,19 @@ import Project from './Project';
 
 export default {
   name: "MyProjects",
-  components: { SectionTitle, Project }
+  components: { SectionTitle, Project },
+  methods: {
+    showHiddenProjects() {
+      
+      const projsHidden = document.querySelectorAll('.project-hidden');
+      for(let p of projsHidden) {
+        document.querySelector('.btn-others').style.display = 'none';
+        p.classList.remove('d-none');
+        p.classList.add('fade-in');
+
+      }
+    }
+  }
 };
 </script>
 
@@ -38,6 +55,53 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btn-others {
+  width: 800px;
+  background-color: var(--project-background);
+  border: none;
+  border-radius: 5px;
+  padding: 3px 0px;
+  font-size: 1.02rem;
+}
+
+.btn-others:hover {
+  transform: scale(1.05);
+}
+
+.project-hidden {
+    scale: 0;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: 0.5s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px){
+    .btn-others {
+        width: 660px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-others {
+        width: 480px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-others {
+        width: 80%;
+    }
 }
 
 </style>

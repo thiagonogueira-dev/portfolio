@@ -49,6 +49,7 @@ nav {
 .logo {
   font-size: 1.5rem !important;
   margin: 0;
+  user-select: none;
 }
 
 .logo span {
