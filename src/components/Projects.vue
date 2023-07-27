@@ -1,11 +1,11 @@
 <template>
     <section class="projects" id="projetos">
         <SectionTitle title="PROJETOS"/>
-        <Project name="Montty Hall" img="montty-hall.png" 
-          summary="Site criado utilizando o framework <b>Vue.js</b> para demostrar o problema de Montty Hall.
+        <Project name="Monty Hall" img="monty-hall.png" 
+          summary="Site criado utilizando o framework <b>Vue.js</b> para demostrar o problema de Monty Hall.
           É possível escolher a quantidade de portas e a porta premiada."
-          :technologies="['vuejs']" :haveWebSite="true"  webSite="https://montty-hall.vercel.app/"
-          repository="https://github.com/thiagonogueira-dev/montty-hall"/>
+          :technologies="['vuejs']" :haveWebSite="true"  webSite="https://monty-hall-vue-js.vercel.app/"
+          repository="https://github.com/thiagonogueira-dev/monty-hall"/>
         <Project name="Games List" img="games-list.png"
           summary="Um sistema de cadastro de jogos feito utilizando <b>Spring Boot</b>, um framework do <b>Java</b>,
             onde é possível organizar os jogos por categoria e ordená-los de acordo com a vontade do usuário. O frontend foi

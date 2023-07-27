@@ -11,7 +11,7 @@
                         <a href="https://www.linkedin.com/in/thiago-nogueira-247903218/" target="_blank">
                             <font-awesome-icon :icon="['fab', 'linkedin']" title="Linkedin" class="linkedin"/>
                         </a>
-                        <a href="https://drive.google.com/file/d/1aZxcyT_VOhnIsX-9nH-znBL_tPDSRoeG/view?usp=sharing" target="_blank">
+                        <a href="https://drive.google.com/file/d/16KIS7v-LK5bQylgxj1UuSTEbeoKjbOd7/view?usp=sharing" target="_blank">
                             <font-awesome-icon :icon="['fas', 'file-lines']" title="Currículo" class="curriculo"/>
                         </a>
                     </div>
@@ -71,13 +71,15 @@ export default {
 
 
     .figure img {
-        margin-top: 30px;
-        width: 200px;
-        height: 180px;
+        margin-top: 20px;
+        width: 220px;
+        height: 200px;
+        margin-right: 25px;
     }
 
     .summary {
         width: 90%;
+        text-align: justify;
     }
 
     .linkedin, .github, .curriculo {
