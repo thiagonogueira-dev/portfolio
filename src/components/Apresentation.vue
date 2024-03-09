@@ -11,7 +11,7 @@
                         <a href="https://www.linkedin.com/in/thiago-nogueira-247903218/" target="_blank">
                             <font-awesome-icon :icon="['fab', 'linkedin']" title="Linkedin" class="linkedin"/>
                         </a>
-                        <a href="https://drive.google.com/file/d/16KIS7v-LK5bQylgxj1UuSTEbeoKjbOd7/view?usp=sharing" target="_blank">
+                        <a href="https://drive.google.com/file/d/1kFXjU_9BjVyKj75A7TiJVufy-e59Op8M/view?usp=sharing" target="_blank">
                             <font-awesome-icon :icon="['fas', 'file-lines']" title="Currículo" class="curriculo"/>
                         </a>
                     </div>
@@ -20,7 +20,8 @@
                 <h2>Estudante de Sistemas de Informação</h2>
             </div>
             <div class="summary">
-                Olá! Me chamo Thiago, tenho 21 anos e sou apaixonado por tecnologia. Atualmente, estou em busca da minha primeira oportunidade no mercado de trabalho e estou estudando Java com o framework Spring Boot, Node.js e Vue.js. Pretendo me tornar um programador back-end ou fullstack.
+                Olá! Me chamo Thiago, tenho 21 anos e sou apaixonado por tecnologia. Atualmente, estou em busca da minha primeira oportunidade na área de programação 
+                e estou estudando Java com o framework Spring Boot, Node.js e Vue.js. Pretendo me tornar um programador back-end ou fullstack.
             </div>
         </div>
         <div class="figure">

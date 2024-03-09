@@ -1,28 +1,36 @@
 <template>
     <section class="projects" id="projetos">
         <SectionTitle title="PROJETOS"/>
+
         <Project name="Monty Hall" img="monty-hall.png" 
           summary="Site criado utilizando o framework <b>Vue.js</b> para demostrar o problema de Monty Hall.
           É possível escolher a quantidade de portas e a porta premiada."
           :technologies="['vuejs']" :haveWebSite="true"  webSite="https://monty-hall-vue-js.vercel.app/"
           repository="https://github.com/thiagonogueira-dev/monty-hall"/>
+
         <Project name="Games List" img="games-list.png"
           summary="Um sistema de cadastro de jogos feito utilizando <b>Spring Boot</b>, um framework do <b>Java</b>,
             onde é possível organizar os jogos por categoria e ordená-los de acordo com a vontade do usuário. O frontend foi
             feito utilizando a biblioteca <b>jQuery UI</b>."  
           :technologies="['java']" :haveWebSite="false" 
           repository="https://github.com/thiagonogueira-dev/games-list"/>
-        <Project name="Calculadora" img="calc.png"
+        
+        <Project name="Galeria" img="galeria.png" 
+          summary="Galeria de fotos feita com <b>Bootstrap</b> e <b>jQuery</b>."
+          :technologies="['js', 'bootstrap']" :haveWebSite="true"  webSite="https://galeria-alpha.vercel.app/"
+          repository="https://github.com/thiagonogueira-dev/galeria"/>
+
+        <button class="btn-others" @click="showHiddenProjects()">Outros projetos...</button>
+
+        <Project class="project-hidden d-none" name="Calculadora" img="calc.png"
           summary="Calculadora que realiza operações básicas feita utilizando <b>Vue.js</b>."  
           :technologies="['js', 'vuejs']" :haveWebSite="true" webSite="https://calculadora-vue-nu.vercel.app/"
           repository="https://github.com/thiagonogueira-dev/calculadora-vue"/>
 
-        <button class="btn-others" @click="showHiddenProjects()">Outros projetos...</button>
-
         <Project class="project-hidden d-none" name="Flappy Bird" img="flappy.png"
-        summary="Uma cópia simples do jogo Flappy Bird utilizando apenas <b>Html</b>, <b>CSS</b> e <b>JavaScript</b>."  
-        :technologies="['html5', 'css3', 'js']" :haveWebSite="true" webSite="https://flappy-bird-xi-wheat.vercel.app/"
-        repository="https://github.com/thiagonogueira-dev/flappy-bird"/>
+          summary="Uma cópia simples do jogo Flappy Bird utilizando apenas <b>Html</b>, <b>CSS</b> e <b>JavaScript</b>."  
+          :technologies="['html5', 'css3', 'js']" :haveWebSite="true" webSite="https://flappy-bird-xi-wheat.vercel.app/"
+          repository="https://github.com/thiagonogueira-dev/flappy-bird"/>
       
     </section>
 </template>

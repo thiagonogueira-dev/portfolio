@@ -12,7 +12,7 @@
             </div>
         </div>
         <hr>
-        <p>© 2023 Thiago Nogueira</p>
+        <p>© 2024 Thiago Nogueira</p>
     </footer>
 </template>
 

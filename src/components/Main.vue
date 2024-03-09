@@ -2,7 +2,7 @@
     <main class="main">
         <Apresentation />
         <Projects />
-        <Technologies :technologiesFaB="['js', 'node' ,'java','php', 'git',
+        <Technologies :technologiesFaB="['js', 'node' , 'java', 'php', 'git',
             'github', 'aws', 'linux']" :technologiesFaS="['database']"/>
     </main>
 </template>
